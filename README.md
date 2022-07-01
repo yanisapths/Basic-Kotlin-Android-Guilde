@@ -174,3 +174,94 @@
       > If "myVal" is an interger
       
           This is not a string
+          
+   2.2 Ranges
+      
+         var x:Int = 20
+         var y:Int = 10
+         if(x in 1..y) {
+            println("In range")
+         } else {
+            println("out of range")
+         }
+         
+    2.3 Loop Creation
+    
+            for(i in 1..10) {
+               print("$i, ")
+            }
+
+            println("\nCounting backward")
+            for(i in 50 downTo 0) {
+               print("$i, ")
+            }
+            println("\nStepping")
+            for(i in 50 downTo 0 step 2) {
+               print("$i, ")
+            }
+        
+      Output
+     
+         1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
+         Counting backward
+         50, 49, 48, 47, 46, 45, 44,...., 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 
+         Stepping
+         50, 48, 46, 44, 42, 40, 38, 36, 34, 32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12, 10, 8, 6, 4, 2, 0, 
+         
+      
+     > While loop
+           
+           var i = 0
+            while(i < 100) {
+               i+=5
+               print("$i, ")
+            }
+         
+         5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 
+
+    > Do...while loop
+
+         do {
+            i-=5
+            print("$i, ")
+         } while(i > 0)
+         
+         95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 0, 
+       
+    
+  2.4 When statement
+  
+      var choice:Int = 5
+      when(choice) {
+         1 -> print("It's a 1")
+         2 -> print("It's a 2")
+         else -> {
+            print("Not 1 or 2")
+         }
+      }
+      
+   2.5 Collections
+
+         var fruit = listOf<String>("Apple", "Orange", "Banana")
+         println(fruit)
+     
+   > [Apple, Orange, Banana]
+      
+         println(fruit.size)
+      
+   > 3
+
+          for(i in fruit) {
+              println(i)
+          }
+       
+   > Apple
+     Orange
+     Banana
+
+         when{
+              "Banana" in fruit -> print("Banana is indeed yellow")
+          }
+          
+   > Banana is indeed yellow
+  
