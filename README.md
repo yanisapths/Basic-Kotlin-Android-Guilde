@@ -108,4 +108,69 @@
                    println("x not equal to 1 or 2")
                }
            }
+           
+         
+ Working with Conditionals :
+   
+     var x = 10
+     var y = 20
+     var z = 10
 
+       > Normal "if" , but "if" alone doesn't help much
+             if(x == y)
+                 println("$x is equal to $y") //ignored as it's not equal,(not match the statement)
+             if(x < y)
+                 println("$x is less than $y")
+             if(y > z)
+                 println("$y is greater than $z")
+
+       > if..else..
+             if(x == y)
+                 println("$x is equal to $y") else {
+                     println("$x is not equal to $y")
+                 }
+
+             val a = if (x < y) {
+                 println("a is x($x) less than y($y)")
+             } else {
+                 println("a is x($x) not less than y($y)")
+                 y
+             }
+          println(a)
+          
+       >
+        var x = 5
+        val y = 10
+          if(x > y)
+              println("x is greater than y") else {
+                  println("x is not greater than y")
+              }
+         
+
+2. Loops & Functions
+
+   2.1 Types Checking
+   
+       var myVal:Any? = "yes"
+       if(myVal is String){
+           println("This is a string")
+       } else {
+           println("This is not a string")
+       }
+       if(myVal !is Int){
+           println("This is not an Int")
+           myVal = null
+           println(myVal)
+       }
+      
+   Output
+      
+     > If "myVal" is a string
+     
+         This is a string
+         This is not an Int
+         null
+         
+      > If "myVal" is an interger
+      
+          This is not a string
