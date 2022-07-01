@@ -264,4 +264,12 @@
           }
           
    > Banana is indeed yellow
-  
+
+    var fruit:MutableCollection<String> = mutableListOf<String>("Mango","Berries","Watermelon")
+    println(fruit)
+    fruit.add("Cherries")
+    println(fruit)
+    
+> [Mango, Berries, Watermelon]
+
+> [Mango, Berries, Watermelon, Cherries]
