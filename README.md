@@ -1,7 +1,8 @@
-Syntax
+1. Syntax
+   
+ 1.1 Defining Strings
 
-    fun main (args: Array<String>) {
-     var name = "Cody"
+    var name = "Cody"
     println(name)
 
     var firstname:String = "Codie"
@@ -22,6 +23,8 @@ Syntax
     println(firstname+"\\"+lastname)
     println(firstname+"\$"+lastname)
 
+
+  1.2 Null Safety
     var newname:String? = "John"
 
     firstname = null.toString()
@@ -37,5 +40,26 @@ Syntax
     var x = 2
     var y = 4
     val sum = x+y
-    println("$x plus $y is $sum or ${x + y}") }
+    println("$x plus $y is $sum or ${x + y}") 
     
+    
+  1.3 String Operations
+    
+    var name1:String = "Cody Blackwell"
+    var name2:String = "Martha Horowitz"
+    var firstname:String = "Raj "
+    var lastname:String = "Chawanda"
+
+    val firstN:String = name1.trimMargin("Cody ")
+    println(firstN)
+    println(name1.length)
+    println(name2.length)
+
+    println(name1.compareTo(name2))
+
+    var addNames = firstname.plus(lastname)
+    println(addNames)
+
+    var addNames2 = name1.plus(" "+name2)
+    println(addNames2)
+
