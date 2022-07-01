@@ -62,4 +62,50 @@
 
     var addNames2 = name1.plus(" "+name2)
     println(addNames2)
+    
+  1.4 Kotlin Conditionals
+   1. if & when
+   
+        1.1 "if" statement returns value , no ternary required
+         ex:
+         
+            if (x=y) z=10
+
+        1.2 "if" can be represented as blocks
+          ex:
+          
+          var z = if (x == y) {
+                println("equal")
+                x
+            } else {
+                 println("not equal")
+                 y
+            }
+
+        > Standard
+         
+         if (x==y) z=1
+
+        > Expression
+
+         var z= if (x == y) x else y
+
+        > Else
+        
+           if (x == y) {
+               z = 1
+            } else {
+               z = 0
+            }
+
+        1.3 "when" similar to "switch" in C lang, but in Kotlin, it's "when"
+        ex:
+       
+          when (x) {
+               1 -> println("x equals 1")
+               2 -> println("x equals 2")
+               else -> {
+                   println("x not equal to 1 or 2")
+               }
+           }
 
