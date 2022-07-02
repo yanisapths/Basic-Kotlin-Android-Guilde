@@ -57,32 +57,36 @@
           var name2:String = "Martha Horowitz"
           var firstname:String = "Raj "
           var lastname:String = "Chawanda"
+          
+ 1.1 trimMargin()
 
-          val firstN:String = name1.trimMargin("Cody ")
-          println(firstN)
-          println(name1.length)
-          println(name2.length)
+           val firstN:String = name1.trimMargin("Cody ")
+           println(firstN)
+           println(name1.length)
+           println(name2.length)
 
-          println(name1.compareTo(name2))
+ 1.2 compareTo()
 
-          var addNames = firstname.plus(lastname)
-          println(addNames)
+           println(name1.compareTo(name2))
 
-          var addNames2 = name1.plus(" "+name2)
-          println(addNames2)
+ 1.3 plus()
+
+           var addNames = firstname.plus(lastname)
+           println(addNames)
+
+           var addNames2 = name1.plus(" "+name2)
+           println(addNames2)
 
   1.4 Kotlin Conditionals
   ============
      
-            1. if & when
+   1. if & when
 
-                 1.1 "if" statement returns value , no ternary required
-                  ex:
+         1.1 "if" statement returns value , no ternary required
 
                      if (x=y) z=10
 
-                 1.2 "if" can be represented as blocks
-                   ex:
+         1.2 "if" can be represented as blocks
 
                    var z = if (x == y) {
                          println("equal")
@@ -92,25 +96,24 @@
                           y
                      }
 
-                 > Standard
+      > Standard
 
-                  if (x==y) z=1
+          if (x==y) z=1
 
-                 > Expression
+      > Expression
 
-                  var z= if (x == y) x else y
+          var z= if (x == y) x else y
 
-                 > Else
+      > Else
 
-                    if (x == y) {
-                        z = 1
-                     } else {
-                        z = 0
-                     }
+           if (x == y) {
+               z = 1
+           } else {
+               z = 0
+           }
 
-                 1.3 "when" similar to "switch" in C lang, but in Kotlin, it's "when"
-                 ex:
-
+        1.3 "when" similar to "switch" in C lang, but in Kotlin, it's "when"
+                
                    when (x) {
                         1 -> println("x equals 1")
                         2 -> println("x equals 2")
@@ -120,22 +123,24 @@
                     }
 
 
-          Working with Conditionals :
+      Working with Conditionals :
 
               var x = 10
               var y = 20
               var z = 10
 
-                > Normal "if" , but "if" alone doesn't help much
+       > Normal "if" , but "if" alone doesn't help much
+                        
                       if(x == y)
-                          println("$x is equal to $y") //ignored as it's not equal,(not match the statement)
+                        println("$x is equal to $y") //ignored as it's not equal,(not match the statement)
                       if(x < y)
-                          println("$x is less than $y")
+                        println("$x is less than $y")
                       if(y > z)
-                          println("$y is greater than $z")
-
-                > if..else..
-                      if(x == y)
+                        println("$y is greater than $z")
+                              
+       > if..else..
+                     
+                     if(x == y)
                           println("$x is equal to $y") else {
                               println("$x is not equal to $y")
                           }
@@ -148,7 +153,7 @@
                       }
                    println(a)
 
-                >
+                 
                  var x = 5
                  val y = 10
                    if(x > y)
@@ -189,6 +194,11 @@
           
    2.2 Ranges
    ============
+   There are three ways for creating Range in Kotlin –
+
+   - Using (..) operator
+   - Using rangeTo() function
+   - Using downTo() function
       
          var x:Int = 20
          var y:Int = 10
@@ -214,16 +224,16 @@
                print("$i, ")
             }
         
-      Output
+  Output
      
-         1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
-         Counting backward
-         50, 49, 48, 47, 46, 45, 44,...., 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 
-         Stepping
-         50, 48, 46, 44, 42, 40, 38, 36, 34, 32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12, 10, 8, 6, 4, 2, 0, 
+      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
+      Counting backward
+      50, 49, 48, 47, 46, 45, 44,...., 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 
+      Stepping
+      50, 48, 46, 44, 42, 40, 38, 36, 34, 32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12, 10, 8, 6, 4, 2, 0, 
          
       
-     > While loop
+   > While loop
            
            var i = 0
             while(i < 100) {
@@ -233,7 +243,7 @@
          
          5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 
 
-    > Do...while loop
+   > Do...while loop
 
          do {
             i-=5
@@ -255,23 +265,41 @@
                }
             }
       
-   2.5 Collections
-   ============
+  2.5 Collections
+  ============
+   
+   Arrays
+   ==
+    
+    arrayOf()
+    Array<T>
+    mutable
+    fixed size 
+    
+  Lists 
+  ==
+  
+    listOf
+    List<T> and MutableList<T> 
+    No modifying methods 
+    MutableList<T> has "add()" & "remove()"
+     
+    ----
+   
+    var fruit = listOf<String>("Apple", "Orange", "Banana")
+    println(fruit)
 
-                  var fruit = listOf<String>("Apple", "Orange", "Banana")
-                  println(fruit)
-
-            > [Apple, Orange, Banana]
+   [Apple, Orange, Banana]
 
                   println(fruit.size)
 
-            > 3
+   3
 
                    for(i in fruit) {
                        println(i)
                    }
 
-            > Apple
+   Apple
               Orange
               Banana
 
@@ -279,16 +307,17 @@
                        "Banana" in fruit -> print("Banana is indeed yellow")
                    }
 
-            > Banana is indeed yellow
+  Banana is indeed yellow
 
              var fruit:MutableCollection<String> = mutableListOf<String>("Mango","Berries","Watermelon")
              println(fruit)
+             
              fruit.add("Cherries")
              println(fruit)
 
-         > [Mango, Berries, Watermelon]
+   [Mango, Berries, Watermelon]
 
-         > [Mango, Berries, Watermelon, Cherries]
+   [Mango, Berries, Watermelon, Cherries]
 
 
 
