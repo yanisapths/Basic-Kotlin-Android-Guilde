@@ -1,3 +1,14 @@
+Resources
+==
+
+Android Mobile App Developer Tools, Playground IDE 
+- https://developer.android.com/
+- https://developer.android.com/training/kotlinplayground
+
+Skillsoft Percipio 
+- https://www.skillsoft.com/percipio-app
+
+
 
  1.Syntax
  ============
