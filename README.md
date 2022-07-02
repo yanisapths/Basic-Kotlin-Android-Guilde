@@ -9,7 +9,7 @@ Skillsoft Percipio
   https://www.skillsoft.com/percipio-app
 
 ## Libraries
- 1. [ Syntax ](https://github.com/yanisapths/Kotlin-Android-Guide/blob/main/README.md#1syntax)
+ 1. [ Syntax ](https://github.com/yanisapths/Kotlin-Android-Guide#1syntax)
   - 1.1 [Defining Strings](https://github.com/yanisapths/Kotlin-Android-Guide#11-defining-strings)
   - 1.2 [Null Safety](https://github.com/yanisapths/Kotlin-Android-Guide#12-null-safety)
   - 1.3 [String Operations](https://github.com/yanisapths/Kotlin-Android-Guide#13-string-operations)
