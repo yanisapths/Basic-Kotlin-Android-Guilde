@@ -1,14 +1,40 @@
 Resources
 ==
 
-Android Mobile App Developer Tools, Playground IDE 
-- https://developer.android.com/
-- https://developer.android.com/training/kotlinplayground
+Android Mobile App Developer Tools https://developer.android.com/
+
+Playground IDE  https://developer.android.com/training/kotlinplayground
 
 Skillsoft Percipio 
-- https://www.skillsoft.com/percipio-app
+  https://www.skillsoft.com/percipio-app
 
-
+## Libraries
+ 1. [ Syntax ](https://github.com/yanisapths/Kotlin-Android-Guide/blob/main/README.md#1syntax)
+  - 1.1 [Defining Strings](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#11-defining-strings)
+  - 1.2 [Null Safety](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#12-null-safety)
+  - 1.3 [String Operations](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#13-string-operations)
+     - trimMargin()
+     - compareTo()
+     - plus()
+   - 1.4 [Kotlin Conditionals](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#14-kotlin-conditionals)
+     - if
+     - when
+     - if..else..
+ 2. [ Loops & Functions ](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#2loops--functions) 
+  - 2.1 [Types Checking](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#21-types-checking)
+  - 2.2 [Ranges](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#22-ranges)
+  - 2.3 [Loop creation](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#23-loop-creation)
+     - while lop
+     - do..while loop
+  - 2.4 [When Statement](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#24-when-statement)
+  - 2.5 [Collections](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#25-collections)
+     - [Arrays](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#arrays)
+     - [Lists](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#lists)
+     
+ Android Basics in Kotlin
+   - [Unit 2: Layout](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#unit-2-layouts)
+    - [Classes & Inheritance](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#classes--inheritance-in-kotlin)
+    - [Modify classes in the hierachy](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#modify-classes-in-the-hierachy)
 
  1.Syntax
  ============
@@ -91,7 +117,7 @@ Skillsoft Percipio
   1.4 Kotlin Conditionals
   --
      
-   1. if & when
+   1. if 
 
          1.1 "if" statement returns value , no ternary required
 
@@ -123,7 +149,8 @@ Skillsoft Percipio
                z = 0
            }
 
-        1.3 "when" similar to "switch" in C lang, but in Kotlin, it's "when"
+     
+   2. "when" similar to "switch" in C lang, but in Kotlin, it's "when"
                 
                    when (x) {
                         1 -> println("x equals 1")
@@ -149,7 +176,7 @@ Skillsoft Percipio
                       if(y > z)
                         println("$y is greater than $z")
                               
-       > if..else..
+   3. if..else..
                      
                      if(x == y)
                           println("$x is equal to $y") else {
