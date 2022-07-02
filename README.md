@@ -3,7 +3,7 @@
  ============
 
    1.1 Defining Strings
-   ============
+   --
 
           var name = "Cody"
           println(name)
@@ -29,7 +29,7 @@
 
 
    1.2 Null Safety
-   ============
+   --
      
           var newname:String? = "John"
 
@@ -51,7 +51,7 @@
     
     
   1.3 String Operations
-  ============
+  --
     
           var name1:String = "Cody Blackwell"
           var name2:String = "Martha Horowitz"
@@ -78,7 +78,7 @@
            println(addNames2)
 
   1.4 Kotlin Conditionals
-  ============
+  --
      
    1. if & when
 
@@ -166,7 +166,7 @@
  ============
 
    2.1 Types Checking
-   ============
+   --
    
        var myVal:Any? = "yes"
        if(myVal is String){
@@ -193,7 +193,7 @@
           This is not a string
           
    2.2 Ranges
-   ============
+   --
    There are three ways for creating Range in Kotlin –
 
    - Using (..) operator
@@ -209,7 +209,7 @@
          }
          
   2.3 Loop Creation
-  ============
+  --
     
             for(i in 1..10) {
                print("$i, ")
@@ -254,7 +254,7 @@
        
     
   2.4 When statement
-  ============
+  --
   
             var choice:Int = 5
             when(choice) {
@@ -266,10 +266,10 @@
             }
       
   2.5 Collections
-  ============
+  --
    
    Arrays
-   ==
+   --
     
     arrayOf()
     Array<T>
@@ -277,7 +277,7 @@
     fixed size 
     
   Lists 
-  ==
+  --
   
     listOf
     List<T> and MutableList<T> 
@@ -380,8 +380,9 @@ Unit 2: Layouts
       
     
 Open 
+--
   
-  : By default, "classes are final" and cannot be subclaased. Only allowed to inherit from "abstract" classes or classes that are marked with the "open" keyword. 
+  By default, "classes are final" and cannot be subclaased. Only allowed to inherit from "abstract" classes or classes that are marked with the "open" keyword. 
       
          open class RoundHut(residents:Int): Dwelling(residents) {
             override val buildingMaterial = "Straw"
@@ -389,8 +390,9 @@ Open
          }
       
 Subclass 
+--
    
-   : RoundTower is a subclass of 'RoundHut'
+   RoundTower is a subclass of 'RoundHut'
          
          class RoundTower(
             residents:Int, 
@@ -403,13 +405,12 @@ Subclass
     
     
 Modify classes in the hierachy 
----
+===
 
-  - Calculate the floor area
+ Calculate the floor area
+ ----
 
-  - All abstract methods in an abstract class must be implemented in every of the subclasses.
-
- 
+  All abstract methods in an abstract class must be implemented in every of the subclasses.
  
         import kotlin.math.PI
      
@@ -453,6 +454,48 @@ Modify classes in the hierachy
          }
     }
 
-      
+  Allow a new resident to get a room
+  --
+  
+    residents++ as a shorthand for residents = residents + 1
+   
+   //inside abstract class
+          
+        abstract class Dwelling(private var residents:Int){
+             ......
+             fun getRoom() {
+                  if (capacity > residents) {
+                      residents++
+                      println("You got a room!")
+                  } else {
+                      println("Sorry, at capacity and no rooms left.")
+                  }
+              }
+         }
+       
+   //main
     
-      
+       fun main() {
+       ...
+       
+          println("Has room? ${hasRoom()}")
+          getRoom()
+       }
+       
+  Fit a carpet into a round dwelling
+  --
+  
+    import kotlin.math.sqrt
+    
+  Implement function in RoundHut class to calculate carpet length.
+  
+     fun calculateMaxCarpetLength(): Double {
+
+       return sqrt(2.0) * radius
+     }
+   
+  Print in main()
+   - you can add calculateMaxCarpetLength() to RoundHut, and RoundTower inherits it.
+   
+    println("Carpet Length: ${calculateMaxCarpetLength()}")
+
