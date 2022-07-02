@@ -273,3 +273,48 @@
 > [Mango, Berries, Watermelon]
 
 > [Mango, Berries, Watermelon, Cherries]
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Android Basics in Kotlin : Reference
+
+> https://developer.android.com/courses/android-basics-kotlin/course
+
+> https://developer.android.com/training/kotlinplayground
+
+---------------------------------------------------------------------------------------------------------------------------
+Unit 2: Layouts
+
+   Classes & Inheritance in Kotlin
+
+
+      fun main() {
+          abstract class Dwelling(private var residents:Int){
+              //buildingM cannot be given a valur, so use "abstract" to indicate that it is not going to be defined here.
+              abstract val buildingMaterial:String
+              abstract val capacity:Int
+
+              fun hasRoom(): Boolean {
+                return residents < capacity
+              }
+          }
+          //When you declare abstract functions, it's like a promise to give them values and implementations later, 
+          //any subclass needs to implement the function body 
+          class SquareCabin(residents:Int):Dwelling(residents){
+              override val buildingMaterial = "Wood"
+              override val capacity = 6
+          }
+
+         val squareCabin = SquareCabin(6)
+          println("Material: ${squareCabin.buildingMaterial}")
+          // Simplified code: 
+          // with(instancename){ operations..}
+          with(squareCabin){
+              println("\nSquare Cabin\n===========")
+              println("Capacity: ${capacity}")
+          }
+
+         }
