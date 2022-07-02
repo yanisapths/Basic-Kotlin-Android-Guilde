@@ -1,155 +1,167 @@
-1. Syntax
-   
- 1.1 Defining Strings
 
-    var name = "Cody"
-    println(name)
+ 1.Syntax
+ ============
 
-    var firstname:String = "Codie"
-    var middle:String = "Curve"
-    var lastname:String = "Blackwell"
-    println(firstname+" "+middle+" "+lastname)
-    println(firstname[3]+" "+lastname[1]+firstname[1]+middle[3]+middle[4]+" "+middle[1])
-    firstname = "James"
-    println(firstname)
+   1.1 Defining Strings
+   ============
 
-    //tab
-    println(firstname+"\t"+lastname)
+          var name = "Cody"
+          println(name)
 
-    //new line
-    println(firstname+"\n"+lastname)
+          var firstname:String = "Codie"
+          var middle:String = "Curve"
+          var lastname:String = "Blackwell"
+          println(firstname+" "+middle+" "+lastname)
+          println(firstname[3]+" "+lastname[1]+firstname[1]+middle[3]+middle[4]+" "+middle[1])
+          firstname = "James"
+          println(firstname)
 
-    //normal backslash or character
-    println(firstname+"\\"+lastname)
-    println(firstname+"\$"+lastname)
+          //tab
+          println(firstname+"\t"+lastname)
+
+          //new line
+          println(firstname+"\n"+lastname)
+
+          //normal backslash or character
+          println(firstname+"\\"+lastname)
+          println(firstname+"\$"+lastname)
 
 
-  1.2 Null Safety
-    var newname:String? = "John"
 
-    firstname = null.toString()
-    newname = null
-    println(newname+" "+"is"+" "+firstname)
+   1.2 Null Safety
+   ============
+     
+          var newname:String? = "John"
 
-    var fname:String = "James"
-    var tel:Int = 123456
+          firstname = null.toString()
+          newname = null
+          println(newname+" "+"is"+" "+firstname)
 
-    val jamesB = "Employee Tel.: = $tel"
-    println("$fname , $jamesB")
+          var fname:String = "James"
+          var tel:Int = 123456
 
-    var x = 2
-    var y = 4
-    val sum = x+y
-    println("$x plus $y is $sum or ${x + y}") 
+          val jamesB = "Employee Tel.: = $tel"
+          println("$fname , $jamesB")
+
+          var x = 2
+          var y = 4
+          val sum = x+y
+          println("$x plus $y is $sum or ${x + y}") 
+
     
     
   1.3 String Operations
+  ============
     
-    var name1:String = "Cody Blackwell"
-    var name2:String = "Martha Horowitz"
-    var firstname:String = "Raj "
-    var lastname:String = "Chawanda"
+          var name1:String = "Cody Blackwell"
+          var name2:String = "Martha Horowitz"
+          var firstname:String = "Raj "
+          var lastname:String = "Chawanda"
 
-    val firstN:String = name1.trimMargin("Cody ")
-    println(firstN)
-    println(name1.length)
-    println(name2.length)
+          val firstN:String = name1.trimMargin("Cody ")
+          println(firstN)
+          println(name1.length)
+          println(name2.length)
 
-    println(name1.compareTo(name2))
+          println(name1.compareTo(name2))
 
-    var addNames = firstname.plus(lastname)
-    println(addNames)
+          var addNames = firstname.plus(lastname)
+          println(addNames)
 
-    var addNames2 = name1.plus(" "+name2)
-    println(addNames2)
-    
+          var addNames2 = name1.plus(" "+name2)
+          println(addNames2)
+
   1.4 Kotlin Conditionals
-   1. if & when
-   
-        1.1 "if" statement returns value , no ternary required
-         ex:
+  ============
+     
+            1. if & when
+
+                 1.1 "if" statement returns value , no ternary required
+                  ex:
+
+                     if (x=y) z=10
+
+                 1.2 "if" can be represented as blocks
+                   ex:
+
+                   var z = if (x == y) {
+                         println("equal")
+                         x
+                     } else {
+                          println("not equal")
+                          y
+                     }
+
+                 > Standard
+
+                  if (x==y) z=1
+
+                 > Expression
+
+                  var z= if (x == y) x else y
+
+                 > Else
+
+                    if (x == y) {
+                        z = 1
+                     } else {
+                        z = 0
+                     }
+
+                 1.3 "when" similar to "switch" in C lang, but in Kotlin, it's "when"
+                 ex:
+
+                   when (x) {
+                        1 -> println("x equals 1")
+                        2 -> println("x equals 2")
+                        else -> {
+                            println("x not equal to 1 or 2")
+                        }
+                    }
+
+
+          Working with Conditionals :
+
+              var x = 10
+              var y = 20
+              var z = 10
+
+                > Normal "if" , but "if" alone doesn't help much
+                      if(x == y)
+                          println("$x is equal to $y") //ignored as it's not equal,(not match the statement)
+                      if(x < y)
+                          println("$x is less than $y")
+                      if(y > z)
+                          println("$y is greater than $z")
+
+                > if..else..
+                      if(x == y)
+                          println("$x is equal to $y") else {
+                              println("$x is not equal to $y")
+                          }
+
+                      val a = if (x < y) {
+                          println("a is x($x) less than y($y)")
+                      } else {
+                          println("a is x($x) not less than y($y)")
+                          y
+                      }
+                   println(a)
+
+                >
+                 var x = 5
+                 val y = 10
+                   if(x > y)
+                       println("x is greater than y") else {
+                           println("x is not greater than y")
+                       }
          
-            if (x=y) z=10
 
-        1.2 "if" can be represented as blocks
-          ex:
-          
-          var z = if (x == y) {
-                println("equal")
-                x
-            } else {
-                 println("not equal")
-                 y
-            }
-
-        > Standard
-         
-         if (x==y) z=1
-
-        > Expression
-
-         var z= if (x == y) x else y
-
-        > Else
-        
-           if (x == y) {
-               z = 1
-            } else {
-               z = 0
-            }
-
-        1.3 "when" similar to "switch" in C lang, but in Kotlin, it's "when"
-        ex:
-       
-          when (x) {
-               1 -> println("x equals 1")
-               2 -> println("x equals 2")
-               else -> {
-                   println("x not equal to 1 or 2")
-               }
-           }
-           
-         
- Working with Conditionals :
-   
-     var x = 10
-     var y = 20
-     var z = 10
-
-       > Normal "if" , but "if" alone doesn't help much
-             if(x == y)
-                 println("$x is equal to $y") //ignored as it's not equal,(not match the statement)
-             if(x < y)
-                 println("$x is less than $y")
-             if(y > z)
-                 println("$y is greater than $z")
-
-       > if..else..
-             if(x == y)
-                 println("$x is equal to $y") else {
-                     println("$x is not equal to $y")
-                 }
-
-             val a = if (x < y) {
-                 println("a is x($x) less than y($y)")
-             } else {
-                 println("a is x($x) not less than y($y)")
-                 y
-             }
-          println(a)
-          
-       >
-        var x = 5
-        val y = 10
-          if(x > y)
-              println("x is greater than y") else {
-                  println("x is not greater than y")
-              }
-         
-
-2. Loops & Functions
+2.Loops & Functions
+ ============
 
    2.1 Types Checking
+   ============
    
        var myVal:Any? = "yes"
        if(myVal is String){
@@ -176,6 +188,7 @@
           This is not a string
           
    2.2 Ranges
+   ============
       
          var x:Int = 20
          var y:Int = 10
@@ -186,6 +199,7 @@
          }
          
     2.3 Loop Creation
+    ============
     
             for(i in 1..10) {
                print("$i, ")
@@ -230,91 +244,133 @@
        
     
   2.4 When statement
+  ============
   
-      var choice:Int = 5
-      when(choice) {
-         1 -> print("It's a 1")
-         2 -> print("It's a 2")
-         else -> {
-            print("Not 1 or 2")
-         }
-      }
+            var choice:Int = 5
+            when(choice) {
+               1 -> print("It's a 1")
+               2 -> print("It's a 2")
+               else -> {
+                  print("Not 1 or 2")
+               }
+            }
       
    2.5 Collections
+   ============
 
-         var fruit = listOf<String>("Apple", "Orange", "Banana")
-         println(fruit)
-     
-   > [Apple, Orange, Banana]
-      
-         println(fruit.size)
-      
-   > 3
+                  var fruit = listOf<String>("Apple", "Orange", "Banana")
+                  println(fruit)
 
-          for(i in fruit) {
-              println(i)
-          }
-       
-   > Apple
-     Orange
-     Banana
+            > [Apple, Orange, Banana]
 
-         when{
-              "Banana" in fruit -> print("Banana is indeed yellow")
-          }
-          
-   > Banana is indeed yellow
+                  println(fruit.size)
 
-    var fruit:MutableCollection<String> = mutableListOf<String>("Mango","Berries","Watermelon")
-    println(fruit)
-    fruit.add("Cherries")
-    println(fruit)
-    
-> [Mango, Berries, Watermelon]
+            > 3
 
-> [Mango, Berries, Watermelon, Cherries]
+                   for(i in fruit) {
+                       println(i)
+                   }
 
+            > Apple
+              Orange
+              Banana
+
+                  when{
+                       "Banana" in fruit -> print("Banana is indeed yellow")
+                   }
+
+            > Banana is indeed yellow
+
+             var fruit:MutableCollection<String> = mutableListOf<String>("Mango","Berries","Watermelon")
+             println(fruit)
+             fruit.add("Cherries")
+             println(fruit)
+
+         > [Mango, Berries, Watermelon]
+
+         > [Mango, Berries, Watermelon, Cherries]
 
 
 
 ---------------------------------------------------------------------------------------------------------------------------
 
 Android Basics in Kotlin : Reference
+============
 
-> https://developer.android.com/courses/android-basics-kotlin/course
+- https://developer.android.com/courses/android-basics-kotlin/course
 
-> https://developer.android.com/training/kotlinplayground
+- https://developer.android.com/training/kotlinplayground
 
----------------------------------------------------------------------------------------------------------------------------
 Unit 2: Layouts
+============
 
    Classes & Inheritance in Kotlin
 
+   > buildingMaterial cannot be given a value, so use "abstract" to indicate that it is not going to be defined here.
+        
+            abstract class Dwelling(private var residents:Int){
+                abstract val buildingMaterial:String
+                 abstract val capacity:Int
 
-      fun main() {
-          abstract class Dwelling(private var residents:Int){
-              //buildingM cannot be given a valur, so use "abstract" to indicate that it is not going to be defined here.
-              abstract val buildingMaterial:String
-              abstract val capacity:Int
+                 fun hasRoom(): Boolean {
+                   return residents < capacity
+                 }
+             }
+         
+         
+   > When you declare abstract functions, it's like a promise to give them values and implementations later, 
+       any subclass needs to implement the function body 
+        
+           class SquareCabin(residents:Int):Dwelling(residents){
+                 override val buildingMaterial = "Wood"
+                 override val capacity = 6
+             }
 
-              fun hasRoom(): Boolean {
-                return residents < capacity
-              }
-          }
-          //When you declare abstract functions, it's like a promise to give them values and implementations later, 
-          //any subclass needs to implement the function body 
-          class SquareCabin(residents:Int):Dwelling(residents){
-              override val buildingMaterial = "Wood"
-              override val capacity = 6
-          }
-
-         val squareCabin = SquareCabin(6)
-          println("Material: ${squareCabin.buildingMaterial}")
-          // Simplified code: 
-          // with(instancename){ operations..}
-          with(squareCabin){
-              println("\nSquare Cabin\n===========")
-              println("Capacity: ${capacity}")
-          }
-
+            val squareCabin = SquareCabin(6)
+             println("Material: ${squareCabin.buildingMaterial}")
+  
+  
+  Simplified code
+  
+       : with(instancename){ operations..}
+         
+            with(squareCabin){
+                 println("\nSquare Cabin\n===========")
+                 println("Capacity: ${capacity}")
+                 println("Material: ${buildingMaterial}")
+                 println("Has room? ${hasRoom()}")
+             }
+  
+       
+      Square Cabin
+      ============
+      Capacity: 6
+      Material: Wood
+      Has room? false
+      
+    
+Open 
+  
+  : By default, "classes are final" and cannot be subclaased. Only allowed to inherit from "abstract" classes or classes that are marked with the "open" keyword. 
+      
+         open class RoundHut(residents:Int): Dwelling(residents) {
+            override val buildingMaterial = "Straw"
+            override val capacity = 4
          }
+      
+Subclass 
+   
+   : RoundTower is a subclass of 'RoundHut'
+         
+         class RoundTower(
+            residents:Int, 
+            val floors:Int = 2 ) : RoundHut(residents){
+            
+            override val buildingMaterial = "Stone"
+            override val capacity = 4 * floors
+         }
+      
+    
+      
+    
+      
