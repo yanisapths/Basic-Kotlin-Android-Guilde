@@ -10,31 +10,31 @@ Skillsoft Percipio
 
 ## Libraries
  1. [ Syntax ](https://github.com/yanisapths/Kotlin-Android-Guide/blob/main/README.md#1syntax)
-  - 1.1 [Defining Strings](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#11-defining-strings)
-  - 1.2 [Null Safety](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#12-null-safety)
-  - 1.3 [String Operations](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#13-string-operations)
+  - 1.1 [Defining Strings](https://github.com/yanisapths/Kotlin-Android-Guide#11-defining-strings)
+  - 1.2 [Null Safety](https://github.com/yanisapths/Kotlin-Android-Guide#12-null-safety)
+  - 1.3 [String Operations](https://github.com/yanisapths/Kotlin-Android-Guide#13-string-operations)
      - trimMargin()
      - compareTo()
      - plus()
-   - 1.4 [Kotlin Conditionals](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#14-kotlin-conditionals)
+   - 1.4 [Kotlin Conditionals](https://github.com/yanisapths/Kotlin-Android-Guide#14-kotlin-conditionals)
      - if
      - when
      - if..else..
- 2. [ Loops & Functions ](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#2loops--functions) 
-  - 2.1 [Types Checking](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#21-types-checking)
-  - 2.2 [Ranges](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#22-ranges)
-  - 2.3 [Loop creation](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#23-loop-creation)
+ 2. [ Loops & Functions ](https://github.com/yanisapths/Kotlin-Android-Guide#2loops--functions) 
+  - 2.1 [Types Checking](https://github.com/yanisapths/Kotlin-Android-Guide#21-types-checking)
+  - 2.2 [Ranges](https://github.com/yanisapths/Kotlin-Android-Guide#22-ranges)
+  - 2.3 [Loop creation](https://github.com/yanisapths/Kotlin-Android-Guide#23-loop-creation)
      - while lop
      - do..while loop
-  - 2.4 [When Statement](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#24-when-statement)
-  - 2.5 [Collections](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#25-collections)
-     - [Arrays](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#arrays)
-     - [Lists](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#lists)
+  - 2.4 [When Statement](https://github.com/yanisapths/Kotlin-Android-Guide#24-when-statement)
+  - 2.5 [Collections](https://github.com/yanisapths/Kotlin-Android-Guide#25-collections)
+     - [Arrays](https://github.com/yanisapths/Kotlin-Android-Guide#arrays)
+     - [Lists](https://github.com/yanisapths/Kotlin-Android-Guide#lists)
      
  Android Basics in Kotlin
-   - [Unit 2: Layout](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#unit-2-layouts)
-    - [Classes & Inheritance](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#classes--inheritance-in-kotlin)
-    - [Modify classes in the hierachy](https://github.com/yanisapths/Kotlin-Android-Guide/edit/main/README.md#modify-classes-in-the-hierachy)
+   - [Unit 2: Layout](https://github.com/yanisapths/Kotlin-Android-Guide#unit-2-layouts)
+    - [Classes & Inheritance](https://github.com/yanisapths/Kotlin-Android-Guide#classes--inheritance-in-kotlin)
+    - [Modify classes in the hierachy](https://github.com/yanisapths/Kotlin-Android-Guide#modify-classes-in-the-hierachy)
 
  1.Syntax
  ============
