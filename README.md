@@ -198,8 +198,8 @@
             println("out of range")
          }
          
-    2.3 Loop Creation
-    ============
+  2.3 Loop Creation
+  ============
     
             for(i in 1..10) {
                print("$i, ")
@@ -305,6 +305,7 @@ Unit 2: Layouts
 ============
 
    Classes & Inheritance in Kotlin
+   ----
 
    > buildingMaterial cannot be given a value, so use "abstract" to indicate that it is not going to be defined here.
         
@@ -371,6 +372,58 @@ Subclass
          }
       
     
+    
+Modify classes in the hierachy 
+---
+
+  - Calculate the floor area
+
+  - All abstract methods in an abstract class must be implemented in every of the subclasses.
+
+ 
+ 
+        import kotlin.math.PI
+     
+    
+ //abstract class
+   
+    abstract class Dwelling(private var residents: Int) {
+       //methods
+        ....
+       abstract fun floorArea(): Double
+   }
+   
+ //subclasses
+   
+    class SquareCabin(residents: Int, 
+       val length: Double) : Dwelling(residents) {
+       ......
+       override fun floorArea(): Double {
+          return length * length
+       }
+     }
+
+
+     open class RoundHut(residents: Int, 
+         val radius: Double) : Dwelling(residents) {
+         ....
+         override fun floorArea(): Double {
+             return PI * radius * radius
+         }
+     }
+
+
+     class RoundTower(
+         residents: Int, radius: Double, 
+         val floors: Int = 2) 
+         : RoundHut(residents, radius) {
+
+         ....
+         override fun floorArea(): Double {
+             return super.floorArea() * floors
+         }
+    }
+
       
     
       
