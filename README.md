@@ -8,7 +8,7 @@ Playground IDE  https://developer.android.com/training/kotlinplayground
 Skillsoft Percipio 
   https://www.skillsoft.com/percipio-app
 
-## Libraries
+## In this article
  1. [ Syntax ](https://github.com/yanisapths/Kotlin-Android-Guide#1syntax)
   - 1.1 [Defining Strings](https://github.com/yanisapths/Kotlin-Android-Guide#11-defining-strings)
   - 1.2 [Null Safety](https://github.com/yanisapths/Kotlin-Android-Guide#12-null-safety)
@@ -536,4 +536,6 @@ Modify classes in the hierachy
    - you can add calculateMaxCarpetLength() to RoundHut, and RoundTower inherits it.
    
     println("Carpet Length: ${calculateMaxCarpetLength()}")
+    
+   
 
