@@ -24,17 +24,21 @@ Skillsoft Percipio
   - 2.1 [Types Checking](https://github.com/yanisapths/Kotlin-Android-Guide#21-types-checking)
   - 2.2 [Ranges](https://github.com/yanisapths/Kotlin-Android-Guide#22-ranges)
   - 2.3 [Loop creation](https://github.com/yanisapths/Kotlin-Android-Guide#23-loop-creation)
-     - while lop
-     - do..while loop
+     - [while loop](https://github.com/yanisapths/Kotlin-Android-Guide#while-loop)
+     - [do..while loop](https://github.com/yanisapths/Kotlin-Android-Guide#dowhile-loop)
+     - [for loop](https://github.com/yanisapths/Kotlin-Android-Guide#for-loop)
   - 2.4 [When Statement](https://github.com/yanisapths/Kotlin-Android-Guide#24-when-statement)
   - 2.5 [Collections](https://github.com/yanisapths/Kotlin-Android-Guide#25-collections)
      - [Arrays](https://github.com/yanisapths/Kotlin-Android-Guide#arrays)
-     - [Lists](https://github.com/yanisapths/Kotlin-Android-Guide#lists)
+     - [Read-only List](https://github.com/yanisapths/Kotlin-Android-Guide#read-only-list)
+     - [Mutable List](https://github.com/yanisapths/Kotlin-Android-Guide#mutable-mutablelist)
+      
      
  Android Basics in Kotlin
    - [Unit 2: Layout](https://github.com/yanisapths/Kotlin-Android-Guide#unit-2-layouts)
     - [Classes & Inheritance](https://github.com/yanisapths/Kotlin-Android-Guide#classes--inheritance-in-kotlin)
     - [Modify classes in the hierachy](https://github.com/yanisapths/Kotlin-Android-Guide#modify-classes-in-the-hierachy)
+    - [vararg](https://github.com/yanisapths/Kotlin-Android-Guide#vararg)
 
  1.Syntax
  ============
