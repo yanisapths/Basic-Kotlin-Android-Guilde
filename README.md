@@ -316,13 +316,48 @@ Skillsoft Percipio
     
   Lists 
   --
+   Kotlin standard library function listOf()
+   
+   - ## Read-only: List 
+      - cannot be modified after you create it
+      - "List < String >" holds a list of Strings
+      - you can have a "List < Car >" that holds a list of Car object instances.
+      - reversed() 
+        returns a new list where the elements are in the reverse order.
+      - sorted()
+        returns a new list where the elements are sorted in ascending order.
+            
+         val numbers: List<Int> = listOf(1, 2, 3, 4, 5, 6)
+        
+     If the type of the variable can be guessed (or inferred), then you can omit the data type of the variable.
+         
+         val numbers = listOf(1, 2, 3, 4, 5, 6)
+      
+   - ## Mutable: MutableList 
+      - can be modified after you create it, add, remove
+      - you have to explicitly state the type. 
+      ex. string, int, otherwise "Not enough information to infer type variable"
+      
+             val entrees: MutableList<String> = mutableListOf()
+      - add()
+      
+               println("Add noodles: ${entrees.add("noodles")}")
+               
+      - addAll()
+      
+              val moreItems = listOf("ravioli", "lasagna", "fettuccine")
+              println("Add list: ${entrees.addAll(moreItems)}")
+              
+      - remove()
+      - removeAt() with an index
+      - clear()
+          Clear out the list
+       - isEmpty()
+          Check if the list is empty
   
-    listOf
-    List<T> and MutableList<T> 
-    No modifying methods 
-    MutableList<T> has "add()" & "remove()"
-     
-    ----
+         
+
+----
    
     var fruit = listOf<String>("Apple", "Orange", "Banana")
     println(fruit)
@@ -540,5 +575,28 @@ Modify classes in the hierachy
     
   ## Display a scrollable list
   > Use Lists in Kotlin
+        
+  - Create a class called "Item", where the constructor takes 2 params.
+  
+         open class Item(val name: String, val price: Int)
+       
+  - Vegetables extends from "Item", and called the superclass constructor, 
+      inherits the name property from its parent class Item.
+  ##### Override toString() method
+    
+             class Vegetables(vararg val toppings: String) : Item("Vegetables", 5) {
+                    override fun toString(): String {
+                        if (toppings.isEmpty()) {
+                            return "$name Chef's Choice"
+                        } else {
+                            return name + " " + toppings.joinToString()
+                        }
+                    }
+                }
+      
+   ##### vararg 
+   modifier allows you to pass a variable number of arguments of the same type into a function or constructor.
+      In that way, you can supply the different vegetables as individual strings instead of a list.
+  
    
 
