@@ -271,7 +271,8 @@ Skillsoft Percipio
       50, 48, 46, 44, 42, 40, 38, 36, 34, 32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12, 10, 8, 6, 4, 2, 0, 
          
       
-   > While loop
+#### While loop
+  use a while loop to execute a block of code until the expression evaluates to false and you exit the loop.
            
            var i = 0
             while(i < 100) {
@@ -281,7 +282,7 @@ Skillsoft Percipio
          
          5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 
 
-   > Do...while loop
+#### Do...while loop
 
          do {
             i-=5
@@ -289,7 +290,12 @@ Skillsoft Percipio
          } while(i > 0)
          
          95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 0, 
-       
+#### For loop
+  use a for loop to iterate over all items of a list
+     
+      for (item in myList) {
+        // Execute this code block for each element of the list
+      }
     
   2.4 When statement
   --
