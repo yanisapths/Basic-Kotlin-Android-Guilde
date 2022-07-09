@@ -13,13 +13,7 @@ Skillsoft Percipio
   - 1.1 [Defining Strings](https://github.com/yanisapths/Kotlin-Android-Guide#11-defining-strings)
   - 1.2 [Null Safety](https://github.com/yanisapths/Kotlin-Android-Guide#12-null-safety)
   - 1.3 [String Operations](https://github.com/yanisapths/Kotlin-Android-Guide#13-string-operations)
-     - trimMargin()
-     - compareTo()
-     - plus()
    - 1.4 [Kotlin Conditionals](https://github.com/yanisapths/Kotlin-Android-Guide#14-kotlin-conditionals)
-     - if
-     - when
-     - if..else..
  2. [ Loops & Functions ](https://github.com/yanisapths/Kotlin-Android-Guide#2loops--functions) 
   - 2.1 [Types Checking](https://github.com/yanisapths/Kotlin-Android-Guide#21-types-checking)
   - 2.2 [Ranges](https://github.com/yanisapths/Kotlin-Android-Guide#22-ranges)
@@ -32,6 +26,8 @@ Skillsoft Percipio
      - [Arrays](https://github.com/yanisapths/Kotlin-Android-Guide#arrays)
      - [Read-only List](https://github.com/yanisapths/Kotlin-Android-Guide#read-only-list)
      - [Mutable List](https://github.com/yanisapths/Kotlin-Android-Guide#mutable-mutablelist)
+     - [Set](https://github.com/yanisapths/Kotlin-Android-Guide#set)
+     - [Maps](https://github.com/yanisapths/Kotlin-Android-Guide#maps)
       
      
  Android Basics in Kotlin
