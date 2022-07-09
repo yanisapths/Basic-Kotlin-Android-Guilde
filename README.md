@@ -490,13 +490,31 @@ Skillsoft Percipio
       
   #### Function types
   
-        val triple: (Int) -> Int = {a : Int -> a * 3}
-        println(triple(3))
+  _function types_, where you can define a specifc type of function based on its input parameters and return value.
+    
+       (Int) -> Int
+  
+ A function with above fn type must take in a paramter of type ( Int ) , and return a value of type 'Int'.
+  
+> Notation 
+  
+  - Parameters : listed in parentheses (seperated by commas if there're multiple) 
+  - Arrow -> 
+    followed by
+  - Return type 
+     
+         val triple: (Int) -> Int = {a : Int -> a * 3}
+         println(triple(3))
 
    > a : Int ;can be ommited to 'it'
    
        val double: (Int) -> Int = { it * 2 }
        
+ 
+  #### Higher-order functions
+  
+   - _map, filter, forEach_  are examples of higer-order functions beacuse they took a function as parameter.
+    
    
 
 
