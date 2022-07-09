@@ -47,22 +47,27 @@ Skillsoft Percipio
           println(name)
 
           var firstname:String = "Codie"
-          var middle:String = "Curve"
           var lastname:String = "Blackwell"
-          println(firstname+" "+middle+" "+lastname)
-          println(firstname[3]+" "+lastname[1]+firstname[1]+middle[3]+middle[4]+" "+middle[1])
+          
+          println(firstname+" "+lastname)
+          println(firstname[3]+" "+lastname[1])
+          
+          // Change from Codie to James
           firstname = "James"
           println(firstname)
 
-          //tab
-          println(firstname+"\t"+lastname)
+  ##### Tab
+         
+   println(firstname+"\t"+lastname)
 
-          //new line
-          println(firstname+"\n"+lastname)
+  ##### New line
+         
+   println(firstname+"\n"+lastname)
 
-          //normal backslash or character
-          println(firstname+"\\"+lastname)
-          println(firstname+"\$"+lastname)
+  ##### Normal backslash or character
+         
+   println(firstname+"\\"+lastname)
+   println(firstname+"\$"+lastname)
 
 
 
@@ -99,9 +104,6 @@ Skillsoft Percipio
  1.1 trimMargin()
 
            val firstN:String = name1.trimMargin("Cody ")
-           println(firstN)
-           println(name1.length)
-           println(name2.length)
 
  1.2 compareTo()
 
@@ -110,10 +112,8 @@ Skillsoft Percipio
  1.3 plus()
 
            var addNames = firstname.plus(lastname)
-           println(addNames)
 
            var addNames2 = name1.plus(" "+name2)
-           println(addNames2)
 
   1.4 Kotlin Conditionals
   --
