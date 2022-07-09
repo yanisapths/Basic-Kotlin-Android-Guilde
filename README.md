@@ -401,7 +401,90 @@ Skillsoft Percipio
    [Mango, Berries, Watermelon]
 
    [Mango, Berries, Watermelon, Cherries]
+   
+   
+  Set
+  --
+   - It's a group of related items.
+   - Can't be any duplicates.
+   - Order doesn't matter.
+   
+  Ex. there's a set of books that you've read, and reading them multiple times doesn't change the fact that it's in the set of book you've read.
+    
+   > From Lists to Set
+   
+        val books = listOf("Harry1","Harry2","Harry3", "Harry1","Harry2","Harry3")
+        val setBook = books.toSet()
+        println("list: ${books}\nset: ${setBook}")
+        
+   > Output  
+   
+      list: [Harry1, Harry2, Harry3, Harry1, Harry2, Harry3]
+      set: [Harry1, Harry2, Harry3]
+      
+ #### Mutable & (Immutable) Set
+   
+        val set1 = setOf(1,2,3)
+        val set2 = mutableSetOf(3,2,1)
+      
+ #### contains()
+   
+       println(" $s1 == $s2 : ${s1 == s2 }\ncontains 9: ${s1.contains(9)}")
+      
+   > Output  
+ 
+      [1, 2, 3] == [3, 2, 1] : true
+      contains 9: false
 
+  Maps
+  --
+   - the keys (names) are unique, but the values (ages) can have duplicates.
+   - The key doesn't get added again, but the value it maps to is updated.
+
+          val ages = mutableMapOf<String, Int>(
+            "Fred" to 30,
+            "Ann" to 22
+          ) 
+          println(ages)
+        
+  #### put() 
+  
+        ages.put("Sam", 14)
+  
+  > short-hand
+  
+        ages["Tim"] = 12
+        
+    
+  #### forEach
+   Goes through all the items for you and performs an operation on each one.
+   
+   - it : an identifier of forEach that specifies the current item.
+
+           ages.forEach {
+              print("${it.key} is ${it.value}, ")
+           }
+         
+  > Fred is 30, Ann is 22, 
+  
+  #### map()
+   Applies a transformation to each item in a collection.
+      
+        println(ages.map {"${it.key} is ${it.value}"}.joinToString(", "))
+   
+ #### joinToString(", ") 
+  Adds each item in the transformed collection to a string, separated by , and it knows not to add it to the last item.
+  
+       Fred is 31, Ann is 23
+  
+  
+  #### filter()
+   Returns the items in a collection that match, based on an expression.
+      
+       val filterNames = ages.filter{ it.key.length > 3 }
+  
+   > {Fred=30}
+  
 
 
 ---------------------------------------------------------------------------------------------------------------------------
