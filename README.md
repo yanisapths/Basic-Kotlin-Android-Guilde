@@ -515,9 +515,41 @@ Skillsoft Percipio
   
    - _map, filter, forEach_  are examples of higer-order functions beacuse they took a function as parameter.
     
+         val names = listOf("Fred", "Ann", "Barbara", "Joe")
+         println(names.sortedWith { str1: String, str2: String -> str1.length - str2.length })
+       
+       The last expression in the lambda is the return value. 
+       In this case, it returns the difference between the length of the first string and the length of the second string, which is an Int. 
+       ##### sortedWith()  
+       Outputs a list where the names will be in order of increasing length.
+    
+ > Output 
+
+    [Ann, Joe, Fred, Barbara]
+
+#### OnClickListener and OnKeyListener in Android
+  
+ SAM (Single-Abstract-Method) : the shortened version of the code is possible.
+          
+ ![image](https://user-images.githubusercontent.com/72002605/178110046-914f2989-6a50-4456-bf21-1642549224c3.png)   
    
-
-
+   You just need to make sure the lambda function type matches the function type of the abstract function.
+   Since the view parameter is never used in the lambda, the parameter can be omitted.  
+     
+ 
+ ##### OnKeyListener
+  the abstract method has the following parameters 
+  
+           onKey(View v, int keyCode, KeyEvent event)   
+           
+  You can pass in a lambda to setOnKeyListener().
+      
+        costOfserviceEditText.setOnKeyListener { view, keyCode, event -> handleKeyEventr(view,keyCode) }
+  
+ > Note: If you don't use a lambda parameter in the function body, you can name it _
+ 
+      costOfServiceEditText.setOnKeyListener { view, keyCode, _ -> handleKeyEvent(view, keyCode) }
+  
 ---------------------------------------------------------------------------------------------------------------------------
 
 Android Basics in Kotlin : Reference
