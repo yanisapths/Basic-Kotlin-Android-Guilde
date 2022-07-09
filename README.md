@@ -28,6 +28,7 @@ Skillsoft Percipio
      - [Mutable List](https://github.com/yanisapths/Kotlin-Android-Guide#mutable-mutablelist)
      - [Set](https://github.com/yanisapths/Kotlin-Android-Guide#set)
      - [Maps](https://github.com/yanisapths/Kotlin-Android-Guide#maps)
+     - [Lambdas](https://github.com/yanisapths/Kotlin-Android-Guide#lambdas)
       
      
  Android Basics in Kotlin
