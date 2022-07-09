@@ -482,6 +482,29 @@ Skillsoft Percipio
   
    > {Fred=30}
   
+      val words = listOf("about", "acute", "balloon", "best", "brief", "class")
+  
+      val filterWords = words.filter { it.startWith("c", ignoreCase = true ) }
+             .shuffled()
+             .take(2)
+             .sorted()
+
+  > [balloon, brief]
+  
+  ##### startWith()
+   Returns true if a string starts with the specific string.
+  
+  ##### ignoreCase
+   ex. so "b" will match "b" or "B". Inore upper and lower letter, it's the same if set to true.
+  
+  ##### shuffle()
+   Make a copy of a collection with the terms randomly shuffled.
+    
+  ##### take()
+   Get the first items in the collection.
+   take(1) : take the first item
+   take(2) : take the first and the second items.
+  
   Lambdas
   --
   A function with no name that can immediately be used as an expression. 
