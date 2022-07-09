@@ -481,6 +481,23 @@ Skillsoft Percipio
   
    > {Fred=30}
   
+  Lambdas
+  --
+  A function with no name that can immediately be used as an expression. 
+  
+   - You can store functions in variables and classes, pass functions as arguments, and even return functions.
+   - You can treat them like you would variables of other types like Int or String.
+      
+  #### Function types
+  
+        val triple: (Int) -> Int = {a : Int -> a * 3}
+        println(triple(3))
+
+   > a : Int ;can be ommited to 'it'
+   
+       val double: (Int) -> Int = { it * 2 }
+       
+   
 
 
 ---------------------------------------------------------------------------------------------------------------------------
