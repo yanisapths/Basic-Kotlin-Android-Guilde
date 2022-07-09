@@ -66,8 +66,8 @@ Skillsoft Percipio
 
   ##### Normal backslash or character
          
-   println(firstname+"\\"+lastname)
-   println(firstname+"\$"+lastname)
+       println(firstname+"\\"+lastname)
+       println(firstname+"\$"+lastname)
 
 
 
