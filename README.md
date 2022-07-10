@@ -795,3 +795,13 @@ Unit 3: Navigation
   - Implicit 
     , where you tell the system the type of action, such as opening a link, composing an email, or making a phone call, and the system is responsible for figuring out how to fulfill the request.
     - performing actions involving other apps and rely on the system to determine the end result.
+    
+  ##### Companion Objects
+   A way to define a constant that can be used across multiple classes,
+   only a single instance of companion object will exist for the duration of your program, _singleton pattern_. 
+
+      companion object {
+         const val LETTER = "letter" 
+       }
+   
+
