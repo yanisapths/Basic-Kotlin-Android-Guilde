@@ -1,7 +1,7 @@
 Resources
 ==
 
-Android Mobile App Developer Tools https://developer.android.com/
+Android Mobile App Developer Tools https://developer.android.com/courses/android-basics-kotlin/course
 
 Playground IDE  https://developer.android.com/training/kotlinplayground
 
@@ -36,6 +36,8 @@ Skillsoft Percipio
     - [Classes & Inheritance](https://github.com/yanisapths/Kotlin-Android-Guide#classes--inheritance-in-kotlin)
     - [Modify classes in the hierachy](https://github.com/yanisapths/Kotlin-Android-Guide#modify-classes-in-the-hierachy)
     - [vararg](https://github.com/yanisapths/Kotlin-Android-Guide#vararg)
+   - [Unit 3: Navigation]()
+    - [Acitvities & Intents]()
 
  1.Syntax
  ============
@@ -780,3 +782,16 @@ Modify classes in the hierachy
   
    
 
+Unit 3: Navigation
+============
+
+   Navigate between screens
+   ----
+  #### Activities & Intents
+  ##### Intent ia an objects representing some action to be perform. (describes the request, not the actual result)
+   - Explicit 
+    is highly specific, where you know the exact activity to be launched, often a screen in your own app, responsible for the entire process.
+  
+  - Implicit 
+    , where you tell the system the type of action, such as opening a link, composing an email, or making a phone call, and the system is responsible for figuring out how to fulfill the request.
+    - performing actions involving other apps and rely on the system to determine the end result.
