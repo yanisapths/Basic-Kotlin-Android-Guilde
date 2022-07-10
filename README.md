@@ -36,8 +36,8 @@ Skillsoft Percipio
     - [Classes & Inheritance](https://github.com/yanisapths/Kotlin-Android-Guide#classes--inheritance-in-kotlin)
     - [Modify classes in the hierachy](https://github.com/yanisapths/Kotlin-Android-Guide#modify-classes-in-the-hierachy)
     - [vararg](https://github.com/yanisapths/Kotlin-Android-Guide#vararg)
-   - [Unit 3: Navigation]()
-    - [Acitvities & Intents]()
+   - [Unit 3: Navigation](https://github.com/yanisapths/Kotlin-Android-Guide#unit-3-navigation)
+    - [Navigate between screens](https://github.com/yanisapths/Kotlin-Android-Guide#navigate-between-screens)
 
  1.Syntax
  ============
