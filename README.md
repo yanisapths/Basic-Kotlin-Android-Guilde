@@ -804,4 +804,13 @@ Unit 3: Navigation
          const val LETTER = "letter" 
        }
    
+some [commonly used intents](https://developer.android.com/guide/components/intents-common)
 
+
+ #### Fragments 
+  
+  ![image](https://user-images.githubusercontent.com/72002605/178483867-52e40ce6-5277-432d-8711-351aa2524fbb.png)
+
+  - onCreate() is called before the view is created. 
+  - onCreateView()is where you inflate the layout.
+  - Then, after the view has been created, the onViewCreated() method is called, where you can then bind properties to specific views.
