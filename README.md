@@ -501,6 +501,18 @@ Skillsoft Percipio
   
   ##### shuffle()
    Make a copy of a collection with the terms randomly shuffled.
+      
+  ##### Word Scramble Example
+   Sometimes the shuffled word is the same as original, add 'while loop' to continue the loop until the scrambled word is not the same as the original
+      
+      currentWord = allWordLists.random()
+      
+      var tempWord = currentWord.toCharArray()
+      
+      while (String(tempWord).equals(currentWord, false)) {
+            tempWord.shuffle()
+        }
+       
     
   ##### take()
    Get the first items in the collection.
